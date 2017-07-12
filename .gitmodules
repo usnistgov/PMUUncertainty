@@ -1,0 +1,6 @@
+[submodule "Excel(ActiveX)"]
+	path = Excel(ActiveX)
+	url = https://github.com/usnistgov/LV_Excel_ActiveX.git
+[submodule "Fluke(lib)"]
+	path = Fluke(lib)
+	url = https://github.com/usnistgov/LV_PMU_Lib.git
