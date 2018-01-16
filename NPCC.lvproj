@@ -71,10 +71,10 @@
 		</Item>
 		<Item Name="CUT_FRT.vi" Type="VI" URL="../CUT_FRT.vi"/>
 		<Item Name="CUTUncert.vi" Type="VI" URL="../CUTUncert.vi"/>
-		<Item Name="Excel(ActiveX).lvlib" Type="Library" URL="../../Excel(ActiveX)/Excel(ActiveX).lvlib"/>
+		<Item Name="Excel(ActiveX).lvlib" Type="Library" URL="../Excel(ActiveX)/Excel(ActiveX).lvlib"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="OOBSeqReport.vi" Type="VI" URL="../Reports/OOBSeqReport.vi"/>
-		<Item Name="ParamOfInterest.vi" Type="VI" URL="../../Fluke(Lib)/ParamOfInterest.vi"/>
+		<Item Name="ParamOfInterest.vi" Type="VI" URL="../Fluke(lib)/ParamOfInterest.vi"/>
 		<Item Name="Sample Files.zip" Type="Document" URL="../../../../Users/AR/Documents/PMUCal eval/Sample Files.zip"/>
 		<Item Name="THDReport.vi" Type="VI" URL="../Reports/THDReport.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -153,15 +153,14 @@
 				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
 				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
 			</Item>
-			<Item Name="Fluke(lib).lvlib" Type="Library" URL="../../Fluke(Lib)/Fluke(lib).lvlib"/>
-			<Item Name="ILC Errors.vi" Type="VI" URL="../../PMUResults/FlukeResults/Report/ILC Errors.vi"/>
-			<Item Name="InterpolateDelayTime.vi" Type="VI" URL="../../Fluke(Lib)/InterpolateDelayTime.vi"/>
-			<Item Name="InterpolateOvrUndr.vi" Type="VI" URL="../../Fluke(Lib)/InterpolateOvrUndr.vi"/>
+			<Item Name="Fluke(lib).lvlib" Type="Library" URL="../Fluke(lib)/Fluke(lib).lvlib"/>
+			<Item Name="ILC Errors.vi" Type="VI" URL="../Reports/ILC Errors.vi"/>
+			<Item Name="InterpolateDelayTime.vi" Type="VI" URL="../Fluke(lib)/InterpolateDelayTime.vi"/>
+			<Item Name="InterpolateOvrUndr.vi" Type="VI" URL="../Fluke(lib)/InterpolateOvrUndr.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="RetryFileError.vi" Type="VI" URL="../../PMUResults/FlukeResults/FileAndFolder/RetryFileError.vi"/>
 			<Item Name="RetryOnError.vi" Type="VI" URL="../PMUUncertainty/FileHandling/RetryOnError.vi"/>
-			<Item Name="StepNormalize.vi" Type="VI" URL="../../Fluke(Lib)/StepNormalize.vi"/>
-			<Item Name="StepTransitionIndex.vi" Type="VI" URL="../../Fluke(Lib)/StepTransitionIndex.vi"/>
+			<Item Name="StepNormalize.vi" Type="VI" URL="../Fluke(lib)/StepNormalize.vi"/>
+			<Item Name="StepTransitionIndex.vi" Type="VI" URL="../Fluke(lib)/StepTransitionIndex.vi"/>
 			<Item Name="UserErrors.vi" Type="VI" URL="../PMUUncertainty/FileHandling/UserErrors.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
