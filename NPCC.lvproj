@@ -20,6 +20,10 @@
 		<Item Name="Plots" Type="Folder" URL="../Plots">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Reports" Type="Folder">
+			<Item Name="OOBSeqReport.vi" Type="VI" URL="../Reports/OOBSeqReport.vi"/>
+			<Item Name="THDReport.vi" Type="VI" URL="../Reports/THDReport.vi"/>
+		</Item>
 		<Item Name="Templates" Type="Folder">
 			<Item Name="CE Fluke System" Type="Folder"/>
 			<Item Name="NIST Fluke System" Type="Folder">
@@ -72,11 +76,9 @@
 		<Item Name="CUT_FRT.vi" Type="VI" URL="../CUT_FRT.vi"/>
 		<Item Name="CUTUncert.vi" Type="VI" URL="../CUTUncert.vi"/>
 		<Item Name="Excel(ActiveX).lvlib" Type="Library" URL="../Excel(ActiveX)/Excel(ActiveX).lvlib"/>
+		<Item Name="Fluke(lib).lvlib" Type="Library" URL="../Fluke(lib)/Fluke(lib).lvlib"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="OOBSeqReport.vi" Type="VI" URL="../Reports/OOBSeqReport.vi"/>
-		<Item Name="ParamOfInterest.vi" Type="VI" URL="../Fluke(lib)/ParamOfInterest.vi"/>
 		<Item Name="Sample Files.zip" Type="Document" URL="../../../../Users/AR/Documents/PMUCal eval/Sample Files.zip"/>
-		<Item Name="THDReport.vi" Type="VI" URL="../Reports/THDReport.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -153,14 +155,9 @@
 				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
 				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
 			</Item>
-			<Item Name="Fluke(lib).lvlib" Type="Library" URL="../Fluke(lib)/Fluke(lib).lvlib"/>
-			<Item Name="ILC Errors.vi" Type="VI" URL="../Reports/ILC Errors.vi"/>
-			<Item Name="InterpolateDelayTime.vi" Type="VI" URL="../Fluke(lib)/InterpolateDelayTime.vi"/>
-			<Item Name="InterpolateOvrUndr.vi" Type="VI" URL="../Fluke(lib)/InterpolateOvrUndr.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="ParamOfInterest.vi" Type="VI" URL="../Fluke(lib)/ParamOfInterest.vi"/>
 			<Item Name="RetryOnError.vi" Type="VI" URL="../PMUUncertainty/FileHandling/RetryOnError.vi"/>
-			<Item Name="StepNormalize.vi" Type="VI" URL="../Fluke(lib)/StepNormalize.vi"/>
-			<Item Name="StepTransitionIndex.vi" Type="VI" URL="../Fluke(lib)/StepTransitionIndex.vi"/>
 			<Item Name="UserErrors.vi" Type="VI" URL="../PMUUncertainty/FileHandling/UserErrors.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -292,46 +289,40 @@
 				<Property Name="Destination[2].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{4CD2BAF2-95E7-407B-9661-16C4DA981591}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2014 (64-bit)</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{BC594EC3-71AC-4EFF-9004-2DABE9C79D7A}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2014 SP1</Property>
 				<Property Name="DistPart[0].SoftDep[0].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[0].productName" Type="Str">NI ActiveX Container (64-bit)</Property>
+				<Property Name="DistPart[0].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
 				<Property Name="DistPart[0].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
 				<Property Name="DistPart[0].SoftDep[1].exclude" Type="Bool">false</Property>
 				<Property Name="DistPart[0].SoftDep[1].productName" Type="Str">NI Service Locator 14.0</Property>
 				<Property Name="DistPart[0].SoftDep[1].upgradeCode" Type="Str">{B235B862-6A92-4A04-A8B2-6D71F777DE67}</Property>
-				<Property Name="DistPart[0].SoftDep[10].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[10].productName" Type="Str">NI Deployment Framework 2014</Property>
-				<Property Name="DistPart[0].SoftDep[10].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
-				<Property Name="DistPart[0].SoftDep[11].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[11].productName" Type="Str">NI Error Reporting 2014 (64-bit)</Property>
-				<Property Name="DistPart[0].SoftDep[11].upgradeCode" Type="Str">{785BE224-E5B2-46A5-ADCB-55C949B5C9C7}</Property>
 				<Property Name="DistPart[0].SoftDep[2].exclude" Type="Bool">false</Property>
 				<Property Name="DistPart[0].SoftDep[2].productName" Type="Str">Math Kernel Libraries</Property>
 				<Property Name="DistPart[0].SoftDep[2].upgradeCode" Type="Str">{3BDD0408-2F90-4B42-9777-5ED1D4BE67A8}</Property>
 				<Property Name="DistPart[0].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[3].productName" Type="Str">NI Logos 5.6</Property>
+				<Property Name="DistPart[0].SoftDep[3].productName" Type="Str">NI Logos 14.0</Property>
 				<Property Name="DistPart[0].SoftDep[3].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
 				<Property Name="DistPart[0].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[4].productName" Type="Str">NI TDM Streaming 2.4</Property>
+				<Property Name="DistPart[0].SoftDep[4].productName" Type="Str">NI TDM Streaming 14.0</Property>
 				<Property Name="DistPart[0].SoftDep[4].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
 				<Property Name="DistPart[0].SoftDep[5].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[5].productName" Type="Str">NI LabVIEW Web Server 2014 (64-bit)</Property>
-				<Property Name="DistPart[0].SoftDep[5].upgradeCode" Type="Str">{0EBB88E3-7F03-48FD-BA42-29A1B3BEE0B1}</Property>
+				<Property Name="DistPart[0].SoftDep[5].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2014</Property>
+				<Property Name="DistPart[0].SoftDep[5].upgradeCode" Type="Str">{4372F3E3-5935-4012-93AB-B6710CE24920}</Property>
 				<Property Name="DistPart[0].SoftDep[6].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[6].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2014</Property>
-				<Property Name="DistPart[0].SoftDep[6].upgradeCode" Type="Str">{4372F3E3-5935-4012-93AB-B6710CE24920}</Property>
+				<Property Name="DistPart[0].SoftDep[6].productName" Type="Str">NI VC2008MSMs</Property>
+				<Property Name="DistPart[0].SoftDep[6].upgradeCode" Type="Str">{FDA3F8BB-BAA9-45D7-8DC7-22E1F5C76315}</Property>
 				<Property Name="DistPart[0].SoftDep[7].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[7].productName" Type="Str">NI VC2008MSMs</Property>
-				<Property Name="DistPart[0].SoftDep[7].upgradeCode" Type="Str">{FDA3F8BB-BAA9-45D7-8DC7-22E1F5C76315}</Property>
+				<Property Name="DistPart[0].SoftDep[7].productName" Type="Str">NI VC2010MSMs</Property>
+				<Property Name="DistPart[0].SoftDep[7].upgradeCode" Type="Str">{EFBA6F9E-F934-4BD7-AC51-60CCA480489C}</Property>
 				<Property Name="DistPart[0].SoftDep[8].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[8].productName" Type="Str">NI VC2010MSMs</Property>
-				<Property Name="DistPart[0].SoftDep[8].upgradeCode" Type="Str">{EFBA6F9E-F934-4BD7-AC51-60CCA480489C}</Property>
+				<Property Name="DistPart[0].SoftDep[8].productName" Type="Str">NI mDNS Responder 14.0</Property>
+				<Property Name="DistPart[0].SoftDep[8].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
 				<Property Name="DistPart[0].SoftDep[9].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[9].productName" Type="Str">NI mDNS Responder 14.0</Property>
-				<Property Name="DistPart[0].SoftDep[9].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
-				<Property Name="DistPart[0].SoftDepCount" Type="Int">12</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{9F8AFFE4-BC38-4169-A689-2A0236519330}</Property>
+				<Property Name="DistPart[0].SoftDep[9].productName" Type="Str">NI Deployment Framework 2014</Property>
+				<Property Name="DistPart[0].SoftDep[9].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
+				<Property Name="DistPart[0].SoftDepCount" Type="Int">10</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{4722F14B-8434-468D-840D-2B0CD8CBD5EA}</Property>
 				<Property Name="DistPartCount" Type="Int">1</Property>
 				<Property Name="INST_author" Type="Str">ADPro</Property>
 				<Property Name="INST_buildLocation" Type="Path">../builds/NPCC/NPCC Installer</Property>
@@ -340,8 +331,8 @@
 				<Property Name="INST_defaultDir" Type="Str">{8584FF0E-F39D-473B-9DA4-ED95902A100D}</Property>
 				<Property Name="INST_productName" Type="Str">NPCC</Property>
 				<Property Name="INST_productVersion" Type="Str">0.1.2</Property>
-				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">14008034</Property>
+				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">14018008</Property>
 				<Property Name="MSI_arpCompany" Type="Str">NIST</Property>
 				<Property Name="MSI_arpContact" Type="Str">Allen Goldstein</Property>
 				<Property Name="MSI_arpPhone" Type="Str">301-975-2101</Property>
