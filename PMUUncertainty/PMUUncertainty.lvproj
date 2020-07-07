@@ -99,6 +99,7 @@
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
@@ -125,6 +126,7 @@
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
+				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
@@ -152,7 +154,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{512EE2C2-50E1-4FB3-AFD9-31C27AFD88AF}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">PMUUncertainty.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/PMUUncertainty/PMUUncertainty.exe</Property>
@@ -161,7 +163,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/PMUUncertainty/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{DB21A266-F754-44A3-AA6D-00D1573701D1}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{47365A41-BE4C-4093-AA9B-56212EADFCED}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/main.vi</Property>
@@ -177,14 +179,22 @@
 			</Item>
 			<Item Name="PMUUncertainty Installer" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">PMUUncertainty</Property>
-				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
-				<Property Name="Destination[0].tag" Type="Str">{9D505C8E-4CBF-45CC-9749-6B239416C795}</Property>
+				<Property Name="Destination[0].parent" Type="Str">{7C5E53B9-0CC8-49B4-8873-46C4C66A2706}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{3CCEFF26-B794-4521-BA4D-AB2865026742}</Property>
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
 				<Property Name="Destination[1].name" Type="Str">PMUUncertainty</Property>
-				<Property Name="Destination[1].parent" Type="Str">{7C5E53B9-0CC8-49B4-8873-46C4C66A2706}</Property>
-				<Property Name="Destination[1].tag" Type="Str">{3CCEFF26-B794-4521-BA4D-AB2865026742}</Property>
+				<Property Name="Destination[1].parent" Type="Str">{115F5F59-DED6-42E2-8467-4CD042208C47}</Property>
+				<Property Name="Destination[1].tag" Type="Str">{364150F9-A618-4951-8AD6-9732A1E69FE9}</Property>
 				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Destination[2].name" Type="Str">Templates</Property>
+				<Property Name="Destination[2].parent" Type="Str">{364150F9-A618-4951-8AD6-9732A1E69FE9}</Property>
+				<Property Name="Destination[2].tag" Type="Str">{B5970FC6-EF51-4F07-90D2-429AAE600441}</Property>
+				<Property Name="Destination[2].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[3].name" Type="Str">Specifications</Property>
+				<Property Name="Destination[3].parent" Type="Str">{B5970FC6-EF51-4F07-90D2-429AAE600441}</Property>
+				<Property Name="Destination[3].tag" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Destination[3].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">4</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
 				<Property Name="DistPart[0].productID" Type="Str">{1601A0F4-B5D1-4488-881C-9158DFB0D05C}</Property>
 				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2014 f1</Property>
@@ -234,7 +244,7 @@
 				<Property Name="INST_buildLocation" Type="Path">../builds/PMUUncertainty/PMUUncertainty Installer</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
 				<Property Name="INST_buildSpecName" Type="Str">PMUUncertainty Installer</Property>
-				<Property Name="INST_defaultDir" Type="Str">{9D505C8E-4CBF-45CC-9749-6B239416C795}</Property>
+				<Property Name="INST_defaultDir" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
 				<Property Name="INST_productName" Type="Str">PMUUncertainty</Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
@@ -243,6 +253,8 @@
 				<Property Name="MSI_distID" Type="Str">{11A51006-C67C-45CA-8893-10C32D977FA5}</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
 				<Property Name="MSI_upgradeCode" Type="Str">{A4FA23BF-C00F-4795-A9BF-A7B73F390EC1}</Property>
+				<Property Name="MSI_windowMessage" Type="Str">This will install the PMU conformity Asessment software</Property>
+				<Property Name="MSI_windowTitle" Type="Str">IEEE ICAP PMU Conformity Assessment</Property>
 				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
 				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
 				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
@@ -255,6 +267,46 @@
 				<Property Name="Source[1].name" Type="Str">Sample Files.zip</Property>
 				<Property Name="Source[1].tag" Type="Ref">/My Computer/Sample Files/Sample Files.zip</Property>
 				<Property Name="Source[1].type" Type="Str">File</Property>
+				<Property Name="Source[10].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[10].name" Type="Str">Spec_60F0_10Fs_P.xml</Property>
+				<Property Name="Source[10].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_60F0_10Fs_P.xml</Property>
+				<Property Name="Source[10].type" Type="Str">File</Property>
+				<Property Name="Source[11].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[11].name" Type="Str">Spec_60F0_12Fs_M.xml</Property>
+				<Property Name="Source[11].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_60F0_12Fs_M.xml</Property>
+				<Property Name="Source[11].type" Type="Str">File</Property>
+				<Property Name="Source[12].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[12].name" Type="Str">Spec_60F0_12Fs_P.xml</Property>
+				<Property Name="Source[12].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_60F0_12Fs_P.xml</Property>
+				<Property Name="Source[12].type" Type="Str">File</Property>
+				<Property Name="Source[13].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[13].name" Type="Str">Spec_60F0_15Fs_M.xml</Property>
+				<Property Name="Source[13].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_60F0_15Fs_M.xml</Property>
+				<Property Name="Source[13].type" Type="Str">File</Property>
+				<Property Name="Source[14].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[14].name" Type="Str">Spec_60F0_15Fs_P.xml</Property>
+				<Property Name="Source[14].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_60F0_15Fs_P.xml</Property>
+				<Property Name="Source[14].type" Type="Str">File</Property>
+				<Property Name="Source[15].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[15].name" Type="Str">Spec_60F0_20Fs_M.xml</Property>
+				<Property Name="Source[15].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_60F0_20Fs_M.xml</Property>
+				<Property Name="Source[15].type" Type="Str">File</Property>
+				<Property Name="Source[16].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[16].name" Type="Str">Spec_60F0_20Fs_P.xml</Property>
+				<Property Name="Source[16].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_60F0_20Fs_P.xml</Property>
+				<Property Name="Source[16].type" Type="Str">File</Property>
+				<Property Name="Source[17].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[17].name" Type="Str">Spec_60F0_30Fs_M.xml</Property>
+				<Property Name="Source[17].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_60F0_30Fs_M.xml</Property>
+				<Property Name="Source[17].type" Type="Str">File</Property>
+				<Property Name="Source[18].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[18].name" Type="Str">Spec_60F0_30Fs_P.xml</Property>
+				<Property Name="Source[18].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_60F0_30Fs_P.xml</Property>
+				<Property Name="Source[18].type" Type="Str">File</Property>
+				<Property Name="Source[19].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[19].name" Type="Str">Spec_60F0_60Fs_M.xml</Property>
+				<Property Name="Source[19].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_60F0_60Fs_M.xml</Property>
+				<Property Name="Source[19].type" Type="Str">File</Property>
 				<Property Name="Source[2].dest" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
 				<Property Name="Source[2].File[0].dest" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
 				<Property Name="Source[2].File[0].name" Type="Str">PMUUncertainty.exe</Property>
@@ -267,7 +319,43 @@
 				<Property Name="Source[2].name" Type="Str">PMUUncertainty</Property>
 				<Property Name="Source[2].tag" Type="Ref">/My Computer/Build Specifications/PMUUncertainty</Property>
 				<Property Name="Source[2].type" Type="Str">EXE</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="Source[20].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[20].name" Type="Str">Spec_60F0_60Fs_P.xml</Property>
+				<Property Name="Source[20].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_60F0_60Fs_P.xml</Property>
+				<Property Name="Source[20].type" Type="Str">File</Property>
+				<Property Name="Source[21].dest" Type="Str">{B5970FC6-EF51-4F07-90D2-429AAE600441}</Property>
+				<Property Name="Source[21].name" Type="Str">PMU PFI.xltx</Property>
+				<Property Name="Source[21].tag" Type="Ref">/My Computer/Templates/PMU PFI.xltx</Property>
+				<Property Name="Source[21].type" Type="Str">File</Property>
+				<Property Name="Source[3].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[3].name" Type="Str">Spec_50F0_10Fs_M.xml</Property>
+				<Property Name="Source[3].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_50F0_10Fs_M.xml</Property>
+				<Property Name="Source[3].type" Type="Str">File</Property>
+				<Property Name="Source[4].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[4].name" Type="Str">Spec_50F0_10Fs_P.xml</Property>
+				<Property Name="Source[4].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_50F0_10Fs_P.xml</Property>
+				<Property Name="Source[4].type" Type="Str">File</Property>
+				<Property Name="Source[5].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[5].name" Type="Str">Spec_50F0_25Fs_M.xml</Property>
+				<Property Name="Source[5].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_50F0_25Fs_M.xml</Property>
+				<Property Name="Source[5].type" Type="Str">File</Property>
+				<Property Name="Source[6].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[6].name" Type="Str">Spec_50F0_25Fs_P.xml</Property>
+				<Property Name="Source[6].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_50F0_25Fs_P.xml</Property>
+				<Property Name="Source[6].type" Type="Str">File</Property>
+				<Property Name="Source[7].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[7].name" Type="Str">Spec_50F0_50Fs_M.xml</Property>
+				<Property Name="Source[7].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_50F0_50Fs_M.xml</Property>
+				<Property Name="Source[7].type" Type="Str">File</Property>
+				<Property Name="Source[8].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[8].name" Type="Str">Spec_50F0_50Fs_P.xml</Property>
+				<Property Name="Source[8].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_50F0_50Fs_P.xml</Property>
+				<Property Name="Source[8].type" Type="Str">File</Property>
+				<Property Name="Source[9].dest" Type="Str">{4D1FF900-571F-47D2-BA7D-7CA37292D768}</Property>
+				<Property Name="Source[9].name" Type="Str">Spec_60F0_10Fs_M.xml</Property>
+				<Property Name="Source[9].tag" Type="Ref">/My Computer/Templates/Specifications/Spec_60F0_10Fs_M.xml</Property>
+				<Property Name="Source[9].type" Type="Str">File</Property>
+				<Property Name="SourceCount" Type="Int">22</Property>
 			</Item>
 		</Item>
 	</Item>
